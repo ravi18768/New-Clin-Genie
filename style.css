@@ -1712,7 +1712,7 @@ footer .max-container {
 
 .toggle-option.active {
   color: var(--white);
-  background-color: #33c275;
+  background-color: #000000;
   border-radius: 8px;
 }
 
@@ -1748,7 +1748,7 @@ footer .max-container {
 
 .pricing-card:hover {
   transform: scale(1.05);
-  background-color: #005653;
+  background-color: #0a0a0a;
 }
 .pricing-card h4 {
   line-height: 55px;
@@ -1772,13 +1772,13 @@ footer .max-container {
   font-size: 40px;
   margin-bottom: 15px;
   line-height: 43px;
-  color: #33c275;
+  color: #000000;
 }
 
 .pricing-card .price span {
   font-family: var(--font-family-primary);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #3e3e3e;
   background-color: transparent;
 }
@@ -1813,7 +1813,7 @@ footer .max-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #33c275;
+  color: #000;
   background-color: var(--bg-green);
 }
 
@@ -1823,16 +1823,16 @@ footer .max-container {
 
 .price-btn {
   display: inline-block;
-  background-color: transparent;
-  color: #33c275;
+  background-color: #ffff;
+  color: #000;
   padding: 10px 1rem;
   border-radius: 8px;
   transition: 0.3s;
-  border: 1px solid #33c275;
+  border: 1px solid #000;
   font-size: 16px;
   margin-top: 20px;
   font-family: var(--font-family-primary);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .pricing-card:hover h4,
@@ -1845,13 +1845,13 @@ footer .max-container {
 }
 
 .pricing-card:hover ul li::before {
-  background-color: #33c275;
+  background-color: #000;
   color: #ffffff;
 }
 
 .pricing-card:hover .price-btn {
   background-color: #fff;
-  color: #005653;
+  color: #000;
   border-color: #fff;
 }
 

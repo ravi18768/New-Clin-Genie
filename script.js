@@ -619,7 +619,7 @@ function renderPricingCards() {
     priceDiv.textContent = item.price ? item.price : "Custom";
 
     const priceSpan = document.createElement("span");
-    priceSpan.textContent = item.time ? ` /per ${item.time}` : "";
+    priceSpan.textContent = item.time ? ` /Per ${item.time}` : "";
 
     priceDiv.appendChild(priceSpan);
 

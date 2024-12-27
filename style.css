@@ -626,7 +626,7 @@ footer .max-container {
 }
 
 .footer-divider {
-  border-color: var(--footer-divider-color);
+  border-color: var(--white);
   margin: 20px 0px;
 }
 .footer-column li a {

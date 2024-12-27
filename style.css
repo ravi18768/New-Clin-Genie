@@ -13,7 +13,7 @@
 }
 /* Define variables at the root level */
 :root {
-  --primary: #005653;
+  --primary: #0a0a0a;
   --secondary: #33c275;
   --hover-color: #007b7b;
   --bg-green: #33c2751a;
@@ -26,7 +26,7 @@
   --black: #000000;
   --text-grey: #414141;
   --footer-divider-color: #33c275;
-  --font-family-primary: "Lufga";
+  --font-family-primary: "minion";
   --font-family-secondary: "inter";
   --title-font-family: "minion";
   --chip-border-radius: 20px;

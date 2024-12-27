@@ -820,9 +820,9 @@ footer .max-container {
 .card-description {
   font-family: var(--font-family-primary);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #5c6060;
-  line-height: 20px;
+  line-height: 22px;
   text-align: center;
 }
 
@@ -3066,7 +3066,7 @@ textarea {
 }
 
 .existing-card-title {
-  color: #005653;
+  color: #0a0a0a;
   font-size: 24px;
   font-weight: bold;
   font-family: var(--font-family-primary);

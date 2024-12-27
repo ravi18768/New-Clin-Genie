@@ -64,7 +64,7 @@ h1 {
 }
 h2 {
   text-transform: capitalize;
-  color: #242731;
+  color: #030014;
   line-height: 72px;
   font-family: var(--font-family-primary);
   font-weight: 600;
@@ -1058,7 +1058,7 @@ footer .max-container {
 }
 
 #audio-section {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
 }
 .voice-container {
   text-align: center;
@@ -1068,6 +1068,7 @@ footer .max-container {
 }
 .voice-container p {
   margin: 3rem auto;
+  color: #2f3132;
 }
 
 .demo-btn {
@@ -2254,8 +2255,8 @@ textarea {
 .list-container li {
   font-family: var(--font-family-primary);
   color: #3e3e3e;
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 500;
   display: flex;
@@ -2296,11 +2297,12 @@ textarea {
 .tick::before {
   content: "";
   width: 14px;
-  height: 10px;
+  height: 12px;
   background-image: url("./assets/images/tick.svg");
   background-size: 100%; /* Make the image cover the entire pseudo-element */
   background-repeat: no-repeat;
   display: inline-block;
+  margin-top: 2px;
 }
 .red-asterisk {
   color: red;
@@ -2342,7 +2344,7 @@ textarea {
 }
 
 .outCall.inCall {
-  background-color: var(--secondary); /* Change background to green */
+  background-color: var(--primary); /* Change background to green */
   color: var(--white); /* Adjust text color for better contrast */
 }
 .outCall p {
@@ -2403,6 +2405,7 @@ textarea {
   font-size: 22px;
   line-height: 34px;
   font-weight: 600;
+  color: #2f3132;
 }
 
 .incall-details {
@@ -2986,25 +2989,25 @@ textarea {
 }
 
 .import-leads-container {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
   position: relative;
 }
 
 #lead-generation {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
 }
 
 #feedback-smarter {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
 }
 
 #pricing {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
 }
 
 /* Existing System */
 .connect-existing-system {
-  background-color: #fffcf8;
+  background-color: #f3f5f8;
 }
 
 .existing-card {

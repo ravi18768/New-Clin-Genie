@@ -1814,7 +1814,7 @@ footer .max-container {
   justify-content: center;
   align-items: center;
   color: #000;
-  background-color: var(--bg-green);
+  background-color: #0a0a0a33;
 }
 
 .pricing-card .btn {

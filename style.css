@@ -1857,7 +1857,7 @@ footer .max-container {
 
 /* contact us style */
 .contact-us {
-  background: url("/assets/images/BG.svg");
+  background-color: var(--primary);
   width: 100%;
 }
 
@@ -2043,8 +2043,9 @@ form {
 }
 
 .form-group1 label {
+  color: #061c3d;
   font-family: var(--font-family-primary);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -2114,46 +2115,42 @@ textarea {
 }
 
 .section-2 {
-  background: url("/assets/images/BG.svg");
-  padding: 60px 0 120px;
-}
-
-.section-2-hero {
-  margin: 0 auto;
-  padding: 60px 0;
-  gap: 20px;
-  position: relative;
-  max-width: 80vw;
-}
-
-.section-2 h1 {
-  font-size: 50px;
-}
-.section-2 h1,
-.section-2 p {
-  color: var(--white);
-  text-align: center;
-}
-.section-2 p {
-  margin-top: 20px;
-  font-weight: 500;
+  background-color: var(--primary);
 }
 
 .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.rate-card {
+  border: 2.5px solid var(--white);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  flex: 1;
+  gap: 40px;
+  border-radius: 20px;
+  min-height: 250px;
+  width: 100%;
 }
 
-.grid h1 {
+.rate-card h1 {
   font-size: 48px;
   line-height: 24px;
+  color: var(--white);
 }
-.grid p {
-  font-size: 16px;
+.rate-card p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3066,7 +3063,7 @@ textarea {
 }
 
 .existing-card-title {
-  color: #0a0a0a;
+  color: #005653;
   font-size: 24px;
   font-weight: bold;
   font-family: var(--font-family-primary);

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinGenie</title>
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet">
+</head>
+
+<body id="home-page">
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <header>
+        <nav class="header-container">
+            <div class="listContainer">
+                <img src="./assets/images/mainLogo.svg" alt="ClinGenie" class="mainLogo" />
+                <ul class="tabs">
+                    <li class="tab"><a href="#">Home</a></li>
+                    <li class="tab"><a href="#pricing">Price</a></li>
+                    <li class="tab"><a href="#contact">Contact</a></li>
+                    <li class="tab"><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="right-header-container">
+                    <a href="#" class="signin">Sign In</a>
+                    <button class="button"><span><a href="#contact">Book a Demo</a></span></button>
+                </div>
+                <button id="showButton" class="hamburger-menu">
+                    ☰
+                </button>
+            </div>
+        </nav>
+        <div>
+            <div id="targetDiv" class="hidden">
+                <div class="hideMenu">
+                    <ul>
+                        <li><a href="#" class="tab">Home</a></li>
+                        <li><a href="#" class="tab">Blog</a></li>
+                        <li><a href="#pricing" class="tab">Price</a></li>
+                        <li><a href="#contact" class="tab">Contact</a></li>
+                        <li><a href="faq.html" class="tab">FAQ</a></li>
+                        <li class="demo-btn-drawer"><a href="#" class="signin-drawer">Sign In</a>
+                            <a class="tab" href="#contact">
+                                <button class="button"><span>Book a
+                                        Demo</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- this is a main hero section -->
+    <main>
+        <!-- this section is used to display the main hero section -->
+        <section class="main-hero-container">
+            <img src="./assets/images/header-left.svg" class="start-pattern"
+                style="left: 0px; top: 50px;position: absolute" alt="star" />
+            <div class="max-container">
+                <div class="hero-chip-container">
+                    <div style="width: 65%;margin-bottom: 10px;overflow: hidden;">
+                        <div class="loading-bar"></div>
+                    </div>
+                    <p class="p2"><span class="chip">NEW</span><span>
+                            Recruitment made easy. Trials made successful.
+                        </span> </p>
+                </div>
+                <div class="box1-content">
+                    <!-- this dive is used to display the bottom to top slide animation line -->
+                    <div class="black-progress-container">
+                        <div class="bottom-top-progress"></div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>
+                                Automate Patient Recruitment with AI <br>Agents for <span
+                                    class="highlightText random-text">Better trial outcomes</span>
+                            </h1>
+                            <p class="sub-text">AI-driven, multilingual Patient Recruitment: Targeted Outreach, Higher
+                                <br />
+                                Engagement, and
+                                Increased
+                                Enrollment Success.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dot-img-hidden" style="padding-top: 20px;position: absolute;right: 0px;">
+                        <img src=" ./assets/images/hero-right-img.svg" alt="right-img" />
+                    </div>
+                </div>
+                <div class="features">
+                    <p>CRO</p>
+                    <p>Sites</p>
+                    <p>Sponsors</p>
+                </div>
+                <div class="container">
+                    <!-- <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ?si=SPcAv8pDRzAqKSor"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div> -->
+                    <div class="video-wrapper">
+                        <video class="video-container" controls poster="./assets/images/thumbnail.svg">
+                            <source src="./assets/video/video.mp4" type="video/webm">
+                        </video>
+                    </div>
+                    <div class="form-container" style="position: relative;">
+                        <div>
+                            <h3 class="see-how-title">See how, <span class="highlightText">
+                                    ClinGenie
+                                </span> </h3>
+                            <p class="sub-text2"> Connects participants to clinical trials</p>
+                        </div>
+                        <div class="form-group">
+                            <img src="./assets/images/users.svg" alt="User Icon">
+                            <label for="name">Your Name</label>
+                            <input type="text" placeholder="Name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <img src="./assets/images/email.svg" alt="Email Icon">
+                            <label for="email">Your Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel" />
+                        </div>
+                        <div class="form-group">
+
+                            <button class="btn">Call me now</button>
+                        </div>
+
+                        <!-- Element to render the animation -->
+                        <div class="arrow-lottie">
+                            <lottie-player src="./assets/lottie/arrow.json" background="transparent" speed="1" loop
+                                autoplay>
+                            </lottie-player>
+                            <span>
+                                Try A free <p>test call</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="section-2-hero">
+                <h1>Transforming Clinical Trial Recruitment with Real Results</h1>
+                <p class="sub-text">Achieve faster, more efficient, and scalable patient recruitment with AI-powered
+                    automation.</p>
+            </div>
+            <div class="grid">
+                <div>
+                    <h1>10x</h1>
+                    <p class="sub-text">More Patients Identified</p>
+                </div>
+                <div>
+                    <h1>5x</h1>
+                    <p class="sub-text">Faster Patient Booking</p>
+                </div>
+                <div>
+                    <h1>3x</h1>
+                    <p class="sub-text">Higher Enrollment Rates</p>
+                </div>
+                <div>
+                    <h1>24/7/365</h1>
+                    <p class="sub-text">Automated Engagement</p>
+                </div>
+                <div>
+                    <h1>90%</h1>
+                    <p class="sub-text">Reduction in Manual Effort</p>
+                </div>
+                <div>
+                    <h1>80%</h1>
+                    <p class="sub-text">Reduction in Recruitment Time</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the ai phone agent section -->
+        <section class="import-leads-container">
+            <img src="./assets/images/right-start.svg" class="start-pattern" style="right: 0px; bottom: 20%;"
+                alt="star" />
+            <div class="max-container import-leads-container">
+                <div class="patient-recruitment">
+                    <h1>
+                        <span class="highlightText">ClinGenie </span> <br /> End-to-End Patient Recruitment Automation
+                    </h1>
+                    <p class="sub-text">Seamlessly import, pre-screen, and engage participants with AI-powered
+                        <br>efficiency for faster clinical trial recruitment
+                    </p>
+                    <div class="appointment-section">
+                        <div class="content">
+                            <h2 class="sub-title"> 1. Import Leads</h2>
+                            <p class="main-paragraph">
+                                Effortlessly sync leads from CSV files, Facebook, Google Ads, or your custom CRM to
+                                streamline your recruitment workflow.
+                            </p>
+                            <ul class="list-container">
+                                <li>
+                                    <span class="tick"></span>
+                                    <div>
+                                        Effortless leads import.
+                                    </div>
+
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Manage all leads in one secure, intuitive interface.
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Real-Time sync.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calendar ">
+                            <img src="/assets/images/Import-leads.svg" alt="appointment" id="import-leads" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- this section is used to display the custom support section -->
+        <section id="custome-suport" style="position: relative;">
+            <img src="./assets/images/header-left.svg" class="start-pattern" style="left: -20px; bottom: 30%;"
+                alt="star" />
+            <div class="max-container">
+                <div class="appointment-section pre-screening-section">
+                    <div class="calendar">
+                        <img src="/assets/images/pre-screening.svg" alt="appointment" id="pre-screening" />
+                    </div>
+                    <div class="content">
+                        <h2 class="sub-title">2. Pre-Screening</h2>
+                        <p class="main-paragraph">
+                            Engage leads instantly with AI-powered calls and texts in 4 languages, and efficiently
+                            qualify participants with intelligent, automated pre-screening.
+                        </p>
+                        <ul class="list-container">
+                            <li><span class="tick"></span>
+                                <div>
+                                    Instant outreach
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Instant eligibility checks participant
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Human-like interaction
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Multilingual support
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the lead generation section -->
+        <section id="lead-generation" style="position: relative;">
+            <img src="./assets/images/right-start.svg" class="start-pattern" style="right: 0px; bottom: 30%;"
+                alt="star" />
+            <div class="max-container">
+                <div class="patient-recruitment">
+                    <div class="appointment-section">
+                        <div class="content">
+                            <h2 class="sub-title"> 3. Booking Appointment</h2>
+                            <p class="main-paragraph">
+                                Schedule appointments seamlessly and reduce no-shows
+                            </p>
+                            <ul class="list-container">
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Automated scheduling
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Calendar integration
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Reminders and follow-ups
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Real-Time updates
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calendar">
+                            <img src="/assets/images/booking-appointment.svg" alt="appointment"
+                                id="booking-appointment" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the call center section -->
+        <section id="call-center" class="custom-support-container">
+            <img src="./assets/images/header-left.svg" class="start-pattern" style="left: 0px; bottom: 30%;"
+                alt="star" />
+            <div class="max-container">
+                <div class="appointment-section automate-engagement-section">
+                    <div class="calendar">
+                        <img src="/assets/images/automate-engagement.svg" alt="appointment" id="automate-engagement" />
+                    </div>
+                    <div class=" content">
+                        <h2 class="sub-title">4. Automate Engagement</h2>
+                        <p class="main-paragraph">
+                            Personalize outreach, follow-ups, and reminders with AI-driven automation.
+                        </p>
+                        <ul class="list-container">
+                            <li><span class="tick"></span>
+                                <div>
+                                    Automated follow-ups to maintain participant engagement.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Timely reminders to reduce missed appointments.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Personalized messages based on participant preferences.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Multi-Channel delivery via call, text, or email.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Real-Time updates to track communication status.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- this section is used to display the feedback smarter section -->
+        <section id="feedback-smarter" style="position: relative;">
+            <img src="./assets/images/right-start.svg" class="start-pattern" style="right: 0px; bottom: 30%;"
+                alt="star" />
+            <div class="max-container">
+                <div class="patient-recruitment">
+                    <div class="appointment-section">
+                        <div class="content">
+                            <h2 class="sub-title">5. Post Call Analysis </h2>
+                            <p class="main-paragraph">
+                                Unlock insights and optimize patient interactions with AI-driven analysis.
+                            </p>
+                            <ul class="list-container">
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Review call logs & transcripts
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Extract insights
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Detect sentiment
+                                    </div>
+                                </li>
+                                <li><span class="tick"></span>
+                                    <div>
+                                        Track performance metrics
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calendar">
+                            <img src="/assets/images/post-call.svg" alt="appointment" id="post-call" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- this section is used to display the recruitment section-->
+        <section id="recruitment" style="position: relative;">
+            <img src="./assets/images/header-left.svg" class="start-pattern" style="left: 0px; bottom: 30%;"
+                alt="star" />
+            <div class="max-container">
+                <div class="appointment-section analytics-reports-section">
+
+                    <div class="calendar">
+                        <img src="/assets/images/analytics-reports.svg" alt="appointment" id="analytics-reports" />
+                    </div>
+
+                    <div class="content">
+                        <h2 class="sub-title">6. Analytics & Reports</h2>
+                        <p class="main-paragraph">
+                            Leverage AI-powered analytics to monitor performance, optimize workflows, and drive
+                            recruitment success.
+                        </p>
+                        <ul class="list-container">
+                            <li><span class="tick"></span>
+                                <div>
+                                    Track leads, calls, bookings, and interactions in real time.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    View outbound and inbound call metrics, response rates, and
+                                    conversion ratios.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Analyze pickup rates by the hour and day to optimize calling
+                                    strategies.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Measure estimated hours saved and cost per scheduled booking
+                                    to gauge ROI.
+                                </div>
+                            </li>
+                            <li><span class="tick"></span>
+                                <div>
+                                    Evaluate call to booking, call to pickup, and pickup to
+                                    schedule ratios for data-driven decisions.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the ai audio section -->
+        <section id="audio-section">
+            <div class="max-container">
+                <div class="voice-container">
+                    <h1>How <strong class="highlightText">ClinGenie</strong> Handles Comprehensive Patient
+                        Interaction
+                        Scenarios</h1>
+                    <p class="sub-text">Seamlessly manage every stage of patient interaction with <br /> AI-driven
+                        efficiency,
+                        accuracy, and personalization.</p>
+                    <button class="demo-btn"><span><a href="#contact">Book a Demo</a></span> <img
+                            src="./assets/images/arrow.svg" alt="arrow" style="margin-left: 10px;" /></button>
+                    <div class="voice-card-container"></div>
+                </div>
+                <div class="endlessDivTwo">
+                    <div class="tab-content" id="outbound-content">
+                        <div class="outCall">
+                            <img src="./assets/images/outCall.png" alt="img" />
+                            <div>
+                                <h2>Outbound calls</h2>
+                                <p>Automate and optimize the management of outbound calls to increase your team's
+                                    efficiency and reach more customers.</p>
+                            </div>
+                        </div>
+
+                        <div class="outCall-details">
+                            <div>
+                                <img src="./assets/images/Sales.png" alt="img" />
+                                <h2>Participant Interactions</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/Surveys and feedback.png" alt="img" />
+                                <h2>Surveys and feedback</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/Lead pre qualification.png" alt="img" />
+                                <h2>Participant Prescreen</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/Confrmations and follow-up.png" alt="img" />
+                                <h2>Confirmations and follow-up</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="inbound-content">
+                        <div class="outCall inCall">
+                            <img src="./assets/images/inCall.png" alt="img" />
+                            <div>
+                                <h2>Inbound calls</h2>
+                                <p>Automate the management of inbound calls to improve customer experience and
+                                    increase operational efficiency.</p>
+                            </div>
+                        </div>
+
+                        <div class="incall-details">
+                            <div>
+                                <img src="./assets/images/calender.png" alt="img" />
+                                <h2>Participants Support</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/Surveys and feedback.png" alt="img" />
+                                <h2>Reschedule Appointment</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/FAQs.png" alt="img" />
+                                <h2>FAQs</h2>
+                            </div>
+                            <div>
+                                <img src="./assets/images/study inquiry.png" alt="img" />
+                                <h2>Study Inquiry</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the language list of AI Voice agent -->
+        <section class="revolutionary-section-main max-container">
+            <h1>
+                Revolutionary Features for <span class="highlightText">Patient Recruitment</span> in Clinical Trial</h1>
+            <div class="voice-agent-subTitle">
+                <p class="sub-text">Empowering Clinical Trials with Advanced Capabilities.
+                </p>
+            </div>
+            <div class="ai-agents-section">
+                <div class="card">
+                    <img src="/assets/images/automated-prescreening.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Automated Pre-Screening by Text & Call </h2>
+                    <p class="card-description">Let AI handle initial patient eligibility checks based on trial-specific
+                        criteria, ensuring only qualified candidates move forward.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/multi-voice-agent.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Multilingual AI Voice Agents </h2>
+                    <p class="card-description">Engage with patients in 30+ languages to ensure accessibility and
+                        inclusivity in diverse communities.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/human-conversation.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Human-Like Conversations</h2>
+                    <p class="card-description">Provide empathetic, natural communication using advanced voice
+                        synthesis,
+                        improving patient trust and participation.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/real-time-appointment.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Real-Time Appointment Scheduling</h2>
+                    <p class="card-description">AI integrates with your trial management systems to seamlessly book and
+                        manage patient appointments.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/follow-up.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Follow-Up and Confirmation </h2>
+                    <p class="card-description">Keep patients engaged with automated reminders, follow-ups, and updates,
+                        reducing dropout rates.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/secure-compitance.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Secure and Compliant </h2>
+                    <p class="card-description">Our platform meets the highest standards for data security, including
+                        HIPAA and GDPR compliance, ensuring patient data is protected.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/scalable.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Scalable for Global Trials</h2>
+                    <p class="card-description">Efficiently manage recruitment for small, local studies or large,
+                        multi-country trials with a single platform.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/analytics-dashboard.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Analytics Dashboard</h2>
+                    <p class="card-description">Get real-time insights into recruitment progress, patient demographics,
+                        and bottlenecks to make data-driven decisions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/cost-effective.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Cost-Effective </h2>
+
+                    <p class="card-description">Reduce operational costs by automating manual processes, saving time and
+                        resources for your team.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/seamless-integration.svg" class="agent-image" alt="img" />
+                    <h2 class="card-title">Seamless Integration </h2>
+                    <p class="card-description">Easily integrate with your existing Clinical Trial Management Systems
+                        (CTMS), EHRs, and third-party tools for a unified workflow.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="connect-existing-system">
+            <div class="max-container">
+                <div class="existing-card-container">
+                    <div class="existing-title-card">
+                        <h2 class="sub-title-existing existing-title">Connect <span
+                                class="highlightText">ClinGenie</span> to
+                            Your
+                            Existing
+                            System
+                        </h2>
+                    </div>
+                    <div class="existing-card">
+                        <div class="existing-card-content">
+                            <div class="existing-text-content">
+                                <h2 class="existing-card-title">Your Database</h2>
+                                <p class="existing-card-description">Ingests live data from whichever CRM, CMS platform
+                                    that
+                                    your business
+                                    uses</p>
+                            </div>
+                            <div class="icons">
+                                <img src="./assets/images/hubspot.svg" alt="HubSpot" class="icon">
+                                <img src="./assets/images/shopify.svg" alt="Shopify" class="icon">
+                                <img src="./assets/images/google-sheet.svg" alt="Google Sheets" class="icon">
+                                <img src="./assets/images/Salesforce.svg" alt="Salesforce" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="existing-card">
+                        <div class="existing-card-content">
+                            <div class="existing-text-content">
+                                <h2 class="existing-card-title">Your Telephony</h2>
+                                <p class="existing-card-description">Connects to your company number or choose a number
+                                    provided by us</p>
+                            </div>
+                            <div>
+                                <div class="icons">
+                                    <img src="./assets/images/telephony-icon-1.svg" alt="HubSpot" class="icon">
+                                    <img src="./assets/images/telephony-icon-2.svg" alt="Shopify" class="icon">
+                                    <img src="./assets/images/telephony-icon-3.svg" alt="Google Sheets" class="icon">
+                                    <img src="./assets/images/telephony-icon-4.svg" alt="Salesforce" class="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="existing-card">
+                        <div class="existing-card-content">
+                            <div class="existing-text-content">
+                                <h2 class="existing-card-title">Your Tools</h2>
+                                <p class="existing-card-description">Connects to your scheduling/comms tools to carry
+                                    out
+                                    all related actions</p>
+                            </div>
+                            <div class="tools-icons">
+                                <div class="row first-row">
+                                    <img src="./assets/images/tools-icon-1.svg" alt="HubSpot" class="icon">
+                                    <img src="./assets/images/tools-icon-2.svg" alt="Shopify" class="icon">
+                                </div>
+                                <div class="row">
+                                    <img src="./assets/images/tools-icon-3.svg" alt="Google Sheets"
+                                        class="tools-seperate-icon">
+                                    <img src="./assets/images/tools-icon-4.svg" alt="Salesforce"
+                                        class="tools-seperate-icon">
+                                    <img src="./assets/images/tools-icon-5.svg" alt="Salesforce"
+                                        class="tools-seperate-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-btn-div">
+                    <button class="demo-btn">Explore all integrations <img src="./assets/images/arrow.svg" alt="arrow"
+                            style="margin-left: 20px;" /></button>
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+        <!-- this section is used to display the New Ai Agents -->
+        <section id="new-ai-agents">
+            <div class="max-container new-ai-agents">
+                <h1>Effortlessly Deploy New <span class="highlightText">AI Agents</span> for <br /> Every Study</h1>
+                <p class="sub-text">
+                    Set up personalized AI agents tailored to your study requirements <br /> — quickly, easily, and
+                    independently.
+                </p>
+                <div class="agents-container">
+                    <!-- Left Section -->
+                    <div class="agents-left-section">
+                        <div class="menu-item active" data-image="./assets/images/three/image1.svg">
+                            <h4 class="active-child">1. Self-Serve Agent Setup</h4>
+                            <p class="active-child">Create new AI agents for each study by configuring them with custom
+                                prompts
+                                — no
+                                additional support needed.</p>
+                        </div>
+                        <img src="./assets/images/down-arrow.svg" class="down-arrow" alt="downArrow" />
+                        <div class="menu-item" data-image="./assets/images/three/image2.svg">
+                            <h4>2. Humanized Voice Selection</h4>
+                            <p>Choose from a range of human-like voice options, including female or male
+                                voices, to
+                                match your study’s tone and audience.</p>
+                        </div>
+                        <img src="./assets/images/down-arrow.svg" class="down-arrow" alt="downArrow" />
+
+                        <div class="menu-item" data-image="./assets/images/three/image3.svg">
+                            <h4>3. Seamless Integration</h4>
+                            <p>Integrate AI agents directly with your booking system for automated
+                                scheduling and
+                                management.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="agents-right-section">
+                        <img id="display-image" src="./assets/images/three/image1.svg" alt="Self-Serve Agent Setup"
+                            style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- this section is used to display the pricing -->
+        <section id="pricing">
+            <div class="max-container">
+                <div class="pricing-container">
+                    <!-- <span class="chip pricing-chip">Pricing</span> -->
+                    <h1>Ready to transform your phone <br> calls with <span class="highlightText">
+                            AI automation?
+                        </span></h1>
+                    <div class="toggle-btn-container">
+                        <div class="toggle-button">
+                            <div class="toggle-option active">Monthly</div>
+                            <div class="toggle-option">Yearly 2 months free</div>
+                        </div>
+                    </div>
+                    <div class="pricing-grid" id="price-main-grid"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- this section is used to display the  contact-us -->
+        <section id="contact" class="contact-us">
+            <div class="contact-container max-container">
+                <div class="left-section">
+                    <h1>Ready to Transform Your Clinical Trials?</h1>
+
+                    <div class="contact-info">
+                        <div class="info-field-wrapper">
+                            <div class="info-img-bg">
+                                <img src="/assets/images/white-email.png" alt="email" />
+                            </div>
+                            <div>
+                                <p class="label">Email Us:</p>
+                                <strong> info@xyz.com</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="note">✔ Get your AI ready in 60 seconds</p>
+                </div>
+                <div class="right-section">
+                    <h2>Book your personalized demo today</h2>
+                    <form>
+                        <div class="column-group">
+                            <div class="form-group1">
+                                <label for="name">Name <span class="red-asterisk">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Full name" required>
+                            </div>
+
+                        </div>
+                        <div class="form-group1">
+                            <label for="email">Email <span class="red-asterisk">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group1">
+                            <label for="message">Message <span class="red-asterisk">*</span></label>
+                            <textarea id="message" name="message" placeholder="Tell us about your request"
+                                required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button-secondary"><span>Book a Demo <img
+                                        src="./assets/images/ArrowRight.svg" alt="btn-arrow"
+                                        style="width:25px" /></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is used to display the people saying about clinGennie -->
+        <section id="about-clinGebbie">
+            <div class="max-container">
+                <h1>Take a look at what people are<br /> saying about <span class="highlightText">
+                        ClinGenie
+                    </span> </h1>
+                <div class="about-container">
+                    <!-- here display the about card using script -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- this section is used to display the footer design -->
+    <footer>
+        <div class="max-container">
+            <div class="footer-container">
+                <div class=" footer-column">
+                    <img src="./assets/images/mainLogo.svg" alt="ClinGenie" class="mainLogo" />
+                </div>
+                <ul class="footer-column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms And Conditions</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-bottom">
+                <p>Copyright © 2024 All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#" class="iconButton"><span class="socialIcon"><i class="fa fa-facebook"></i></span><span
+                            class="socialText">
+                            Facebook
+                        </span></a>
+                    <a href="#" class="iconButton"><span class="socialIcon"><i class="fa fa-twitter"></i></span><span
+                            class="socialText">
+                            Twitter
+                        </span></a>
+                    <a href="#" class="iconButton"><span class="socialIcon"><i
+                                class="fa fa-youtube-play"></i></span><span class="socialText">
+                            Youtube
+                        </span></a>
+                    <a href="#" class="iconButton"><span class="socialIcon"> <i class="fa fa-instagram"></i></span><span
+                            class="socialText">
+                            Instagram
+                        </span></a>
+                    <a href="#" class="iconButton"><span class="socialIcon"><i class="fa fa-linkedin"></i></span><span
+                            class="socialText">
+                            Linkedin
+                        </span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/lottie/lottie-player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

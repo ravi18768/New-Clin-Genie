@@ -1,0 +1,82 @@
+[
+  {
+    "imgSrc": "./assets/images/about-people/about-people1.svg",
+    "altText": "about-people",
+    "header": "Emily_RHealth",
+    "stars": "★★★★★",
+    "descriptionHeader": "A Game-Changer for Patient Recruitment",
+    "description": "We’ve been using this platform for patient recruitment for the past six months, and it has significantly streamlined our process. The AI-driven pre-screening and appointment scheduling have saved our team countless hours. I especially love how easy it is to set up new studies and manage everything from a single dashboard. Highly recommended!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people2.svg",
+    "altText": "about-people",
+    "header": "Dr_JamesTrials",
+    "stars": "★★★★★",
+    "descriptionHeader": "Efficiency at Its Best",
+    "description": "This platform has completely transformed how we handle patient recruitment. The AI voice agents are human-like and empathetic, making patients feel comfortable and engaged. The multilingual support has helped us reach diverse populations effortlessly. Our recruitment timelines have been cut in half!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people3.svg",
+    "altText": "about-people",
+    "header": "Rajiv_ClinicalOps",
+    "stars": "★★★★★",
+    "descriptionHeader": "Perfect Solution for Complex Trials",
+    "description": "Managing multiple studies has never been easier. The platform’s ability to create custom agents for each trial ensures tailored communication. The AI analytics provide deep insights, helping us improve our recruitment strategies. Highly efficient and incredibly easy to use."
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people4.svg",
+    "altText": "about-people",
+    "header": "Carlos_PTrials",
+    "stars": "★★★★★",
+    "descriptionHeader": "AI That Feels Human",
+    "description": "We were skeptical at first, but the AI voice agents exceeded our expectations. The calls are natural and clear, and the ability to leave personalized voicemails has improved our response rate. The detailed analytics and performance tracking help us continually optimize our workflow."
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people5.svg",
+    "altText": "about-people",
+    "header": "Megan_CRCoordinator",
+    "stars": "★★★★★",
+    "descriptionHeader": "Simple, Fast, and Effective",
+    "description": "Setting up a new study with this tool takes less than 5 minutes. The prompt builder is incredibly intuitive, and the automated follow-ups ensure no patient slips through the cracks. Integration with our booking system was seamless. It’s exactly what we needed to stay organized and efficient!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people3.svg",
+    "altText": "about-people",
+    "header": "Darlene Robertson",
+    "stars": "★★★★★",
+    "descriptionHeader": "Perfect Solution for Complex Trials",
+    "description": "Managing multiple studies has never been easier. The platform’s ability to create custom agents for each trial ensures tailored communication. The AI analytics provide deep insights, helping us improve our recruitment strategies. Highly efficient and incredibly easy to use."
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people6.svg",
+    "altText": "about-people",
+    "header": "Wade Warren",
+    "stars": "★★★★★",
+    "descriptionHeader": "Efficiency at Its Best",
+    "description": "This platform has completely transformed how we handle patient recruitment. The AI voice agents are human-like and empathetic, making patients feel comfortable and engaged. The multilingual support has helped us reach diverse populations effortlessly. Our recruitment timelines have been cut in half!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people4.svg",
+    "altText": "about-people",
+    "header": "Kristin Watson",
+    "stars": "★★★★★",
+    "descriptionHeader": "A Game-Changer for Patient Recruitment",
+    "description": "We’ve been using this platform for patient recruitment for the past six months, and it has significantly streamlined our process. The AI-driven pre-screening and appointment scheduling have saved our team countless hours. I especially love how easy it is to set up new studies and manage everything from a single dashboard. Highly recommended!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people1.svg",
+    "altText": "about-people",
+    "header": "Theresa Webb",
+    "stars": "★★★★★",
+    "descriptionHeader": "Outstanding Support and Results",
+    "description": "The platform's support team is fantastic and always available to help. The AI agents handle everything from pre-screening to appointment confirmations, allowing our team to focus on more complex tasks. Our recruitment outcomes have tripled since we started using this tool. Worth every penny!!"
+  },
+  {
+    "imgSrc": "./assets/images/about-people/about-people7.svg",
+    "altText": "about-people",
+    "header": "Ronald Richards",
+    "stars": "★★★★★",
+    "descriptionHeader": "Simple, Fast, and Effective",
+    "description": "Setting up a new study with this tool takes less than 5 minutes. The prompt builder is incredibly intuitive, and the automated follow-ups ensure no patient slips through the cracks. Integration with our booking system was seamless. It’s exactly what we needed to stay organized and efficient!"
+  }
+]

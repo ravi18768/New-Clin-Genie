@@ -1,0 +1,159 @@
+/* Header section */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--primary);
+  color: #fff;
+}
+nav {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    max-width: 100vw;
+  }
+}
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  position: relative;
+  font-size: 18px;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.5s ease;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.tab:hover {
+  color: var(--secondary-color);
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.tab:hover::after {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.tab.active {
+  color: var(--secondary-color);
+}
+
+.tab.active::after {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.right-header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hamburger-menu {
+  display: none;
+}
+
+.hideMenu ul {
+  text-decoration-line: none;
+  list-style: none;
+  text-align: justify;
+}
+/* Add these new animation rules while keeping all your existing CSS */
+.hideMenu ul li {
+  padding: 10px;
+  opacity: 0;
+  animation: slideInFade 0.5s ease forwards;
+}
+
+.hideMenu ul li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.hideMenu ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.hideMenu ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.hideMenu ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.hideMenu ul li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.demo-btn-drawer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* responsive style */
+@media (max-width: 790px) {
+  .listContainer ul,
+  .right-header-container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 30px;
+    border-radius: 100%;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+  }
+}

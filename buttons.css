@@ -58,7 +58,7 @@
 
 /* Secondary Button */
 .button-secondary {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: var(--black);
 }
 .button-secondary span {

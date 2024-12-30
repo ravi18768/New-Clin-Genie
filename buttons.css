@@ -78,3 +78,7 @@
 .button-secondary:hover {
   color: var(--white);
 }
+
+.header-btn {
+  padding: 7px 24px;
+}

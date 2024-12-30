@@ -1759,7 +1759,7 @@ footer .max-container {
 .pricing-card p {
   font-family: var(--font-family-primary);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #3e3e3e;
   line-height: 21px;
   margin-bottom: 15px;
@@ -1792,7 +1792,7 @@ footer .max-container {
 
 .pricing-card ul li {
   font-family: var(--font-family-primary);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   margin: 10px 0;

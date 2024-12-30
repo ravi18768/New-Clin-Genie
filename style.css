@@ -58,7 +58,7 @@ h1 {
   color: var(--h1-color);
   line-height: 72px;
   font-family: var(--font-family-primary);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 66px;
   text-align: center;
   text-transform: capitalize;
@@ -779,7 +779,7 @@ footer .max-container {
 }
 .voice-agent-subTitle {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 25px;
   font-size: 1.4rem;
   color: var(--text-grey);
@@ -2274,6 +2274,7 @@ textarea {
 
 .list-container li div {
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 @media (max-width: 1200px) {

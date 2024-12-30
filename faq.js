@@ -440,7 +440,7 @@ faqListArray.forEach((categoryGroup, categoryIndex) => {
         `;
         toggleButton.textContent = "×";
 
-        parentDiv.style.backgroundColor = "#4caf50";
+        parentDiv.style.backgroundColor = "#0A0A0A";
 
         // Update the references
         openDescription = description;

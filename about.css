@@ -24,8 +24,8 @@
   font-family: var(--font-family-primary);
   line-height: 28px;
   font-size: 22px;
-  font-weight: 600;
-  color: #005653;
+  font-weight: 500;
+  color: var(--h1-color);
 }
 .about-img {
   position: absolute;

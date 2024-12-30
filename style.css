@@ -1087,6 +1087,7 @@ footer .max-container {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   font-family: var(--font-family-primary);
+  text-transform: uppercase;
 }
 .demo-btn:hover {
   background-color: var(--hover-color);
@@ -2219,7 +2220,7 @@ textarea {
   font-family: var(--font-family-primary);
   font-weight: 500;
   line-height: 34px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 @media (max-width: 600px) {
   .sub-text {
@@ -3080,7 +3081,7 @@ textarea {
 }
 
 .existing-card-title {
-  color: #005653;
+  color: var(--h1-color);
   font-size: 24px;
   font-weight: bold;
   font-family: var(--font-family-primary);

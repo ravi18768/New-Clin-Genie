@@ -24,6 +24,7 @@
 .faq-block ul {
   list-style-type: none;
 }
+
 .faq-block ul li p {
   font-size: 22px;
   font-family: var(--font-family-primary);
@@ -45,7 +46,7 @@
   color: #c3c6c6;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .faq-title {
